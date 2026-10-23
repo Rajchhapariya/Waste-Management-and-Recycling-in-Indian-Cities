@@ -1,13 +1,13 @@
-# ♻ Waste Management & Recycling in Indian Cities - Hackathon Project
+# Waste Management & Recycling in Indian Cities - Hackathon Project
 
-## 📌 Overview
+## Overview
 This project was created for the **Mini Hackathon: Waste Management & Recycling in Indian Cities**.  
 Our goal: **Predict Recycling Rate** using machine learning models trained on landfill and recycling center data.  
 By analyzing waste patterns, municipalities can **optimize collection schedules**, **reduce overflow**, and **improve recycling efficiency**.
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 - **Source:** Provided hackathon dataset  
 - **Rows:** 851
 - **Columns:** Multiple numerical and categorical features (e.g., waste type, location, landfill name, disposal method)
@@ -19,14 +19,15 @@ By analyzing waste patterns, municipalities can **optimize collection schedules*
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
+```
 project_root/
 │
 ├── data/
 │ ├── raw/ # Raw dataset file
 │ ├── processed/
-|    ├── processed file
+│    ├── processed file
 │
 ├── Notebooks/
 │ ├── exploratory_data_analysis.ipynb # Exploratory Data Analysis
@@ -41,22 +42,30 @@ project_root/
 ├── Report.pdf # Generated summary report
 ├── README.md # This file
 └── requirements.txt # Python dependencies
+```
 
-2️⃣ Install Dependencies
+### Installation & Usage
+
+1. Install Dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-3️⃣ Run Jupyter Notebooks (EDA, training)
+2. Run Jupyter Notebooks (EDA, training):
+```bash
 jupyter notebook
+```
 
-4️⃣ Run Flask App
+3. Run Flask App:
+```bash
 python app.py
-
+```
 
 Visit: http://127.0.0.1:5000
 
-Flask Prediction Interface
+---
 
-📈 Model Performance
+## Model Performance
 
 | Model            | RMSE    |
 | ---------------- | ------- |
@@ -65,11 +74,11 @@ Flask Prediction Interface
 | XGBoost          | 19.1556 |
 | LightGBM         | 19.0014 |
 
-✅ Best Model: LinearRegression
+Selected Best Model: LinearRegression
 
-📑 Reports
+---
 
-Report.pdf – Model summary, dataset info, insights.
+## Reports & Artifacts
 
-metrics.json – RMSE scores.
-
+- `Report.pdf` – Model summary, dataset analysis, and insights.
+- `metrics.json` – Cross-validation RMSE metrics.
